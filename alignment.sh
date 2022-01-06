@@ -5,7 +5,7 @@
 # bash alignment.sh numCPU /path/to/reference/genome.fasta.
 
 # At the moment, this is set up for PE reads, but it can easily be altered for SE reads.
-# Similarly, this script expect FASTQ files ending in "_R1_001.fastq.gz" and "_R2_001.fastq.gz".
+# Similarly, this script expects FASTQ files ending in "_R1_001.fastq.gz" and "_R2_001.fastq.gz".
 
 for i in *R1_001.fastq.gz
 do
