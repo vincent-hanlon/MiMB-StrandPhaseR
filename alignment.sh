@@ -1,4 +1,4 @@
-# 1st argument ($1) is the name of the library to process.
+# 1st argument ($1) is the number of CPUs for parallelizing
 # 2nd argument ($2) is the path to the reference genome.
 
 # Run like this:
