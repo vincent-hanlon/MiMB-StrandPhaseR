@@ -20,5 +20,6 @@ chromosomes=chromosomes)
 
 ################## For replicating a StrandPhaseR run ###################
 
+library(StrandPhaseR)
 strandPhaseR(inputfolder = "./", outputfolder="./SPR_output", positions = "strand_seq_snps.vcf",
 WCregions = "wc_regions.txt", configfile = "StrandPhaseR.config")
