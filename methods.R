@@ -21,5 +21,7 @@ chromosomes=chromosomes)
 ################## For replicating a StrandPhaseR run ###################
 
 library(StrandPhaseR)
-strandPhaseR(inputfolder = "./", outputfolder="./SPR_output", positions = "strand_seq_snps.vcf",
-WCregions = "wc_regions.txt", configfile = "StrandPhaseR.config")
+library(BSgenome.Hsapiens.UCSC.hg38)
+library(parallel)
+
+strandPhaseR(inputfolder = "./", outputfolder="./SPR_output_2", positions = "strand_seq_snps.vcf", WCregions = "wc_regions.txt", configfile = "/path/to/StrandPhaseR.config")
