@@ -13,7 +13,7 @@ conda install -c bioconda bioconductor-genomicranges
 ###################### Removing a conda environment and recreating it with extra packages ########################
 
 conda remove -n spr --all
-conda create -c bioconda -c conda-forge -c agbiome -c r -n spr r-base=4.1.0 samtools=1.14 bwa-mem2 bbtools=37* parallel whatshap r-zoo
+conda create -c bioconda -c conda-forge -c agbiome -c r -n spr r-base=4.1.0 samtools=1.14 bwa-mem2 bbtools=37* parallel whatshap r-zoo bcftools
 
 ####################### Adapter trimming ########################
 
