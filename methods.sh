@@ -28,7 +28,7 @@ conda deactivate
 
 ls ./*.bam bam_poor_quality/*.bam > samples.list
 
-callvariants.sh list=samples.list ref=/path/to/reference/fasta/GRCh38.fasta out=strand_seq_snps.vcf ploidy=2 calldel=f callins=f
+callvariants.sh list=samples.list ref=/path/to/reference/fasta/GRCh38.fasta out=strand_seq_snps.vcf ploidy=2 calldel=f callins=f sample="HG005"
 
 #################### Combining chromosome-specific VCF files after a StrandPhaseR run ####################
 
@@ -36,7 +36,7 @@ bcftools concat --threads 4 SPR_output/VCFfiles/chr*.vcf > ./strandseq_phased_SN
 
 #################### Combining Strand-seq phase information with other data types ####################
 
-whatshap phase -o all_phased.vcf --reference=/path/to/reference.fasta all_unphased_SNVs.vcf additional_WGS.bam strandseq_phased_SNVs.vcf
+whatshap phase -o all_phased.vcf --reference=/path/to/reference.fasta --ignore-read-groups all_unphased_SNVs.vcf additional_WGS.bam strandseq_phased_SNVs.vcf 
 
 #################### Splitting reads by haplotype ####################
 
