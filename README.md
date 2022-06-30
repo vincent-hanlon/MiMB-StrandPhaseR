@@ -4,5 +4,7 @@ This repository is provided for the convenience of readers of the book chapter "
 
 With the exception of alignment.sh, you can't just download these files and run them as scripts. For one thing, the conda environments won't behave nicely (you'll need to activate and deactivate them from the command line). Instead, you should chop up the files and comment out sections you don't need, then run individual lines and commands. Hopefully this saves you some typing.
 
-A preprint of the chapter is hosted by the library of the University of British Columbia [here](http://hdl.handle.net/2429/80678). Note that the code in this repository is slightly more up-to-date than the code in the preprint---namely, "--ignore-read-groups" should be used in Methods 7a (beforehand, it might also be worth using Note 9 to fill in missing genotypes) and "sample='HG005'" should be used in Methods 4.
+A preprint of the chapter is hosted by the library of the University of British Columbia [here](http://hdl.handle.net/2429/80678). Note that the code in this repository is slightly more up-to-date than the code in the preprint---namely, "--ignore-read-groups" should be used in Methods 7a (beforehand, it might also be worth using Note 9 to fill in missing genotypes) and "sample='HG005'" should be used in Methods 4. Also, the preprint does not mention that the reference genome should have chromosome names like chr1, chr2, etc. (rather than 1, 2, etc. or the funny NCBI chromosome names)
+
+If you should run into problems working through the chapter and running the code, feel free to post an issue.
 
