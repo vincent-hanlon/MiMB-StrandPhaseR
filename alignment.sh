@@ -10,7 +10,7 @@
 for i in *R1_001.fastq.gz
 do
        name=$(echo $i | sed 's/_R1_001\.fastq\.gz//')
-       bwa mem -t "$1" "$2" "$i" "$name"_R2_001.fastq.gz  > "$name".sam
+       bwa-mem2 mem -t "$1" "$2" "$i" "$name"_R2_001.fastq.gz > "$name".sam
 done
 
 # compresses, sorts, marks duplicates, and indexes files with aligned sequence reads.
