@@ -1,6 +1,6 @@
 #################### Indexing the reference genome and running alignment.sh ####################
 
-bwa index -a bwtsw /path/to/reference/fasta/GRCh38
+bwa-mem2 index /path/to/reference/fasta/GRCh38
 
 bash alignment.sh numCPU_threads "/path/to/reference/fasta/GRCh38.fasta"
 
