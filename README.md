@@ -8,3 +8,4 @@ A preprint of the chapter is hosted by the library of the University of British 
 
 If you should run into problems working through the chapter and running the code, feel free to post an issue.
 
+Note: The R/Conda installations can be tricky. If a package or dependency fails to install in R, try installing it with Conda first. For example, in one case the R package "rtracklayer" failed to install. The trick was to install the dependency openssl with conda first, then install rtracklayer, StrandPhaseR, etc. 
